@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="/The 27 most beautiful bridges in the world.webp">
+    <link rel="stylesheet" href="/styling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    body
+{
+    background-image: url('The 27 most beautiful bridges in the world.webp');
+    background-size: cover;
+    
+}
+.contactUs
+{
+    position: relative;
+    /* width: 100%; */
+    padding: 40px 100px;
+    text-align: center;
+    
+    
+
+}
+h2
+{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, seri;
+    font-weight: 500;
+    font-size: 35px;
+}
+p
+{
+    text-align: center;
+}
+.contactUs.title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    
+    
+}
+
+.contactUs.title h2
+{
+    color: #fff;
+    font-weight: 500;
+    
+    
+}
+
+.form
+{
+    grid-area: form;
+
+}
+.info
+{
+    grid-area: info;
+}
+.map
+{
+    grid-area: map;
+}
+.contact
+{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgba(0,0,0,0.15);
+    
+}
+
+.box
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap: 20px;
+    margin-top: 20px;
+
+
+    
+    
+}
+h3
+{
+    font-size: 35px;
+    color: #0e3959;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 550;
+}
+.contact h3
+{
+    color: #0e3959;
+    font-weight: 550;
+    font-size: 35px;
+    margin-bottom: 10px;
+    
+}
+
+.formBox
+{
+    position: relative;
+    width: 100%;
+    background: transparent;
+    
+}
+.formBox .row50
+{
+    display: flex;
+    gap: 20px;
+}
+.inputBox
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+    
+}
+.formBox.row100.inputBox
+{
+    width: 100%;
+}
+.inputBox span
+{
+    color: #18b7ff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+
+}
+.inputBox input
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid#333;
+}
+.inputBox textarea
+{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid#333;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]
+{
+    background: #07789b;
+    color: #fff;
+    border: none;
+    font-size: 1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 14px 15px;
+}
+.inputBox ::placeholder
+{
+    color:#999;
+}
+.info
+{
+    color: #05375e;
+    box-shadow: #05375e;
+
+}
+.info h3
+{
+    color: #0d91e9;
+}
+.info .infoBox div
+{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+.info .infoBox div span
+{
+    min-width: 40px;
+    height: 40px;
+    color: #161010;
+    background: #18b7ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 50%;
+    margin-right: 15px;
+
+}
+.info .infoBox div p
+{
+    color: #0e0e13;
+    font-weight: 550;
+    font-size: 19px;
+}
+.info .infoBox div a
+{
+    color: #0e0e13;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: 550;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.sci
+{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+.sci li a
+{
+    color: #fff;
+    font-size: 2em;
+    color: #ccc;
+
+}
+.sci li a:hover
+{
+    color: #1d1111;
+}
+.map
+{
+    padding: 0;
+    background: transparent;
+    
+}
+.map iframe
+{
+    width: 100%;
+    height: 100%;
+     
+}
+@media(max-width:991px)
+{
+    body
+    {
+        background: #03a9f5;
+    }
+    .contactUs
+    {
+        padding: 20px;
+    }
+    .box
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "form"
+        "info"
+        "map";
+    }
+   
+    .formBox .row50
+    {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+
+    }
+    .inputBox
+    {
+        
+        width: 100%;
+    }
+    .contact{
+        padding: 30px;
+    }
+    .map
+    {
+        min-height: 300px;
+        padding: 0px;
+    }
+}
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="contactUs">
+        <div class="title">
+        
+            <h1>Contact <span style="color: rgb(182, 125, 19);">Us</span></h1>
+           
+        </div>
+        <div class="box">
+        <div class="contactform">
+            <h3>Send Message</h3>
+            <form>
+                <div class="formBox">
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>First Name</span>
+                            <input type="text" placeholder="type name...">
+                            
+                        </div>
+                        
+                        <div class="inputBox">
+                            <span>Last Name</span>
+                            <input type="text" placeholder="last name...">
+                        </div>
+                    </div>
+                    
+                    <div class="row50">
+                        <div class="inputBox">
+                            <span>Email</span>
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="inputBox">
+                            <span>Phone</span>
+                            <input type="number" placeholder="+92...">
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <span>Message</span>
+                            <textarea placeholder="Write your Message here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="row100">
+                        <div class="inputBox">
+                            <input type="submit" value="send" onclick="alert('Message has send')">
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="contact info">
+            <h3>Contact Info</h3>
+            <div class="infoBox">
+                <div>
+                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <br>
+                    <p>D - 4 Block H North Nazimabad Town, Karachi, Sindh 74700</p>
+                </div>
+                <div>
+                    <span><i class="fa-regular fa-envelope"></i></span>
+                    <br>
+                    <a href="mailto:huzaifahsiddiqui08@gmail.com">huzaifahisddiqui08@gmail.com <br> siddiq.ahmed2009@gmail.com <br> hafsa.amin9206@gmail.com <br> alishbay32@gmail.com</a>
+                </div>
+                <div>
+                    <span><i class="fa-solid fa-phone"></i></span>
+                    <br>
+                    <a href="tel:+92 3175916447">03175916447 <br> 03351454760 <br>  <br> 03443000903</a>
+                </div>
+                <ul class="sci">
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="contact map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14472.025975210116!2d67.02778755327476!3d24.931848696120475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f3daae54d55%3A0x5dae2a3a4b71f12a!2sAptech%20Learning%20North%20Nazimabad%20II%20Center!5e0!3m2!1sen!2s!4v1712255742250!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+        </div>
+        </div>
+        
+    </div>
+    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+    
+    
+</body>
+</html>
